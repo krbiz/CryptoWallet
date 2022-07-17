@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var selection = 0
+    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(named: "darkBlue")
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $selection) {
+            ProfileView()
+                .tabItem {
+                    Image(selection == 0 ? "tabbar-profile-fill" : "tabbar-profile")
+                }
+                .tag(0)
+            
+            MarketView()
+                .tabItem {
+                    Image(selection == 1 ? "tabbar-market-fill" : "tabbar-market")
+                }
+                .tag(1)
+        }
     }
 }
 

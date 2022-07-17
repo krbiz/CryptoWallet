@@ -14,6 +14,8 @@
 		323ECD2B2884246F003B3E31 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2A2884246F003B3E31 /* OnboardingState.swift */; };
 		323ECD3128842C46003B3E31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3028842C46003B3E31 /* MainView.swift */; };
 		323ECD3428842D2C003B3E31 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */; };
+		323ECD3A28843507003B3E31 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3928843507003B3E31 /* MarketView.swift */; };
+		323ECD3C28843511003B3E31 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3B28843511003B3E31 /* ProfileView.swift */; };
 		324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4328840C590040320C /* CryptoWalletApp.swift */; };
 		324AEB4828840C5B0040320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4728840C5B0040320C /* Assets.xcassets */; };
 		324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4A28840C5B0040320C /* Preview Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		323ECD2A2884246F003B3E31 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		323ECD3028842C46003B3E31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		323ECD3928843507003B3E31 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		323ECD3B28843511003B3E31 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		324AEB4028840C590040320C /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AEB4328840C590040320C /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		324AEB4728840C5B0040320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +121,38 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		323ECD35288434D8003B3E31 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD38288434FB003B3E31 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		323ECD36288434E4003B3E31 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD37288434F6003B3E31 /* View */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		323ECD37288434F6003B3E31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD3928843507003B3E31 /* MarketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		323ECD38288434FB003B3E31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD3B28843511003B3E31 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		324AEB3728840C590040320C = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +177,8 @@
 				324AEB4328840C590040320C /* CryptoWalletApp.swift */,
 				323ECD2C28842BCE003B3E31 /* Onboarding */,
 				323ECD2F28842C21003B3E31 /* Main */,
+				323ECD35288434D8003B3E31 /* Profile */,
+				323ECD36288434E4003B3E31 /* Market */,
 				323ECD1F2884136F003B3E31 /* Shared */,
 				324AEB4728840C5B0040320C /* Assets.xcassets */,
 				323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */,
@@ -291,7 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				323ECD3128842C46003B3E31 /* MainView.swift in Sources */,
+				323ECD3C28843511003B3E31 /* ProfileView.swift in Sources */,
 				324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */,
+				323ECD3A28843507003B3E31 /* MarketView.swift in Sources */,
 				323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */,
 				323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */,
 				323ECD2228841396003B3E31 /* Binary+size.swift in Sources */,
