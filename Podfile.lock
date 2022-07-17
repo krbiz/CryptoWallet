@@ -1,18 +1,26 @@
 PODS:
+  - Alamofire (5.6.1)
+  - Introspect (0.1.4)
   - Kingfisher/Core (5.15.8)
   - Kingfisher/SwiftUI (5.15.8):
     - Kingfisher/Core
 
 DEPENDENCIES:
+  - Alamofire
+  - Introspect
   - Kingfisher/SwiftUI
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Introspect
     - Kingfisher
 
 SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Introspect: b62c4dd2063072327c21d618ef2bedc3c87bc366
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
 
-PODFILE CHECKSUM: 321a4426574f34a0d9ddf91ed6777cb46f4804d7
+PODFILE CHECKSUM: a2fe911827576296e41849c7f66f89a4cbca373a
 
 COCOAPODS: 1.11.2

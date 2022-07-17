@@ -16,6 +16,14 @@
 		323ECD3428842D2C003B3E31 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */; };
 		323ECD3A28843507003B3E31 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3928843507003B3E31 /* MarketView.swift */; };
 		323ECD3C28843511003B3E31 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3B28843511003B3E31 /* ProfileView.swift */; };
+		323ECD42288440BA003B3E31 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD41288440BA003B3E31 /* MarketViewModel.swift */; };
+		323ECD442884411C003B3E31 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD432884411C003B3E31 /* Coin.swift */; };
+		323ECD46288441F9003B3E31 /* View+onLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD45288441F9003B3E31 /* View+onLoad.swift */; };
+		323ECD49288442FE003B3E31 /* MarketCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD48288442FE003B3E31 /* MarketCoinView.swift */; };
+		323ECD4B2884515B003B3E31 /* SelectableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD4A2884515B003B3E31 /* SelectableButtonStyle.swift */; };
+		323ECD4F2884547D003B3E31 /* CoinDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD4E2884547D003B3E31 /* CoinDetailsView.swift */; };
+		323ECD51288457B5003B3E31 /* UINavigationController+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */; };
+		323ECD53288468AF003B3E31 /* Double+currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD52288468AF003B3E31 /* Double+currency.swift */; };
 		324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4328840C590040320C /* CryptoWalletApp.swift */; };
 		324AEB4828840C5B0040320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4728840C5B0040320C /* Assets.xcassets */; };
 		324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4A28840C5B0040320C /* Preview Assets.xcassets */; };
@@ -33,6 +41,14 @@
 		323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		323ECD3928843507003B3E31 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		323ECD3B28843511003B3E31 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		323ECD41288440BA003B3E31 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		323ECD432884411C003B3E31 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		323ECD45288441F9003B3E31 /* View+onLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+onLoad.swift"; sourceTree = "<group>"; };
+		323ECD48288442FE003B3E31 /* MarketCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCoinView.swift; sourceTree = "<group>"; };
+		323ECD4A2884515B003B3E31 /* SelectableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButtonStyle.swift; sourceTree = "<group>"; };
+		323ECD4E2884547D003B3E31 /* CoinDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsView.swift; sourceTree = "<group>"; };
+		323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+backButton.swift"; sourceTree = "<group>"; };
+		323ECD52288468AF003B3E31 /* Double+currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+currency.swift"; sourceTree = "<group>"; };
 		324AEB4028840C590040320C /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AEB4328840C590040320C /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		324AEB4728840C5B0040320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +84,9 @@
 			children = (
 				323ECD2128841396003B3E31 /* Binary+size.swift */,
 				323ECD23288414B4003B3E31 /* Color+custom.swift */,
+				323ECD45288441F9003B3E31 /* View+onLoad.swift */,
+				323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */,
+				323ECD52288468AF003B3E31 /* Double+currency.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -76,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */,
+				323ECD4A2884515B003B3E31 /* SelectableButtonStyle.swift */,
 			);
 			path = "Custom UI";
 			sourceTree = "<group>";
@@ -132,6 +152,7 @@
 		323ECD36288434E4003B3E31 /* Market */ = {
 			isa = PBXGroup;
 			children = (
+				323ECD40288440A9003B3E31 /* Model */,
 				323ECD37288434F6003B3E31 /* View */,
 			);
 			path = Market;
@@ -140,6 +161,7 @@
 		323ECD37288434F6003B3E31 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				323ECD47288442DB003B3E31 /* Subviews */,
 				323ECD3928843507003B3E31 /* MarketView.swift */,
 			);
 			path = View;
@@ -149,6 +171,39 @@
 			isa = PBXGroup;
 			children = (
 				323ECD3B28843511003B3E31 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		323ECD40288440A9003B3E31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD432884411C003B3E31 /* Coin.swift */,
+				323ECD41288440BA003B3E31 /* MarketViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		323ECD47288442DB003B3E31 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD48288442FE003B3E31 /* MarketCoinView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		323ECD4C288453FC003B3E31 /* CoinDetails */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD4D2884546D003B3E31 /* View */,
+			);
+			path = CoinDetails;
+			sourceTree = "<group>";
+		};
+		323ECD4D2884546D003B3E31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD4E2884547D003B3E31 /* CoinDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,11 +230,12 @@
 			isa = PBXGroup;
 			children = (
 				324AEB4328840C590040320C /* CryptoWalletApp.swift */,
+				323ECD1F2884136F003B3E31 /* Shared */,
 				323ECD2C28842BCE003B3E31 /* Onboarding */,
 				323ECD2F28842C21003B3E31 /* Main */,
 				323ECD35288434D8003B3E31 /* Profile */,
 				323ECD36288434E4003B3E31 /* Market */,
-				323ECD1F2884136F003B3E31 /* Shared */,
+				323ECD4C288453FC003B3E31 /* CoinDetails */,
 				324AEB4728840C5B0040320C /* Assets.xcassets */,
 				323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */,
 				323ECD1E288412F9003B3E31 /* Info.plist */,
@@ -334,8 +390,16 @@
 				323ECD3A28843507003B3E31 /* MarketView.swift in Sources */,
 				323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */,
 				323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */,
+				323ECD42288440BA003B3E31 /* MarketViewModel.swift in Sources */,
+				323ECD4F2884547D003B3E31 /* CoinDetailsView.swift in Sources */,
+				323ECD46288441F9003B3E31 /* View+onLoad.swift in Sources */,
 				323ECD2228841396003B3E31 /* Binary+size.swift in Sources */,
+				323ECD53288468AF003B3E31 /* Double+currency.swift in Sources */,
 				323ECD29288421A2003B3E31 /* PinkButtonStyle.swift in Sources */,
+				323ECD442884411C003B3E31 /* Coin.swift in Sources */,
+				323ECD51288457B5003B3E31 /* UINavigationController+backButton.swift in Sources */,
+				323ECD4B2884515B003B3E31 /* SelectableButtonStyle.swift in Sources */,
+				323ECD49288442FE003B3E31 /* MarketCoinView.swift in Sources */,
 				323ECD2B2884246F003B3E31 /* OnboardingState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

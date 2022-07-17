@@ -11,6 +11,10 @@ import SwiftUI
 struct CryptoWalletApp: App {
     @AppStorage("isFirstLaunch") var isFirstLaunch: Bool = true
     
+    init() {
+        setGlobalAppearance()
+    }
+    
     var body: some Scene {
         WindowGroup {
             if isFirstLaunch {
@@ -19,5 +23,28 @@ struct CryptoWalletApp: App {
                 MainView()
             }
         }
+    }
+    
+    private func setGlobalAppearance() {
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor(named: "darkBlue")
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            UITabBar.appearance().backgroundColor = UIColor(named: "darkBlue")
+        }
+        
+        let image = UIImage(named: "navbar-back")?
+            .withAlignmentRectInsets(UIEdgeInsets(top: 0, left: -12, bottom: 0, right: 12))
+            .withRenderingMode(.alwaysOriginal)
+        
+        UINavigationBar.appearance().backIndicatorImage = image
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = image
+        UINavigationBar.appearance().barTintColor = .clear
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().shadowImage = UIImage()
     }
 }

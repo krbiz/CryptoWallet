@@ -16,6 +16,8 @@ extension Color {
         case gray = "gray"
         case lightPink = "lightPink"
         case darkPink = "darkPink"
+        case red = "red"
+        case green = "green"
     }
     
     static func custom(_ type: Name) -> Color {
