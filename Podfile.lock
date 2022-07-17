@@ -1,16 +1,18 @@
 PODS:
-  - Kingfisher (7.2.2)
+  - Kingfisher/Core (5.15.8)
+  - Kingfisher/SwiftUI (5.15.8):
+    - Kingfisher/Core
 
 DEPENDENCIES:
-  - Kingfisher (~> 7.0)
+  - Kingfisher/SwiftUI
 
 SPEC REPOS:
   trunk:
     - Kingfisher
 
 SPEC CHECKSUMS:
-  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
 
-PODFILE CHECKSUM: a9a3c524d02e68cf2dc1b211a3408a7366cc5195
+PODFILE CHECKSUM: 321a4426574f34a0d9ddf91ed6777cb46f4804d7
 
 COCOAPODS: 1.11.2

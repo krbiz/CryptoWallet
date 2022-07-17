@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323ECD2228841396003B3E31 /* Binary+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2128841396003B3E31 /* Binary+size.swift */; };
+		323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD23288414B4003B3E31 /* Color+custom.swift */; };
+		323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2528841565003B3E31 /* OnboardingView.swift */; };
+		323ECD29288421A2003B3E31 /* PinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */; };
+		323ECD2B2884246F003B3E31 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2A2884246F003B3E31 /* OnboardingState.swift */; };
+		323ECD3128842C46003B3E31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3028842C46003B3E31 /* MainView.swift */; };
+		323ECD3428842D2C003B3E31 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */; };
 		324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4328840C590040320C /* CryptoWalletApp.swift */; };
-		324AEB4628840C590040320C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4528840C590040320C /* ContentView.swift */; };
 		324AEB4828840C5B0040320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4728840C5B0040320C /* Assets.xcassets */; };
 		324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4A28840C5B0040320C /* Preview Assets.xcassets */; };
 		BF9A7C258972D7E38D28ED59 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD68307AB8277891EC88F103 /* Pods_CryptoWallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323ECD1E288412F9003B3E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		323ECD2128841396003B3E31 /* Binary+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binary+size.swift"; sourceTree = "<group>"; };
+		323ECD23288414B4003B3E31 /* Color+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+custom.swift"; sourceTree = "<group>"; };
+		323ECD2528841565003B3E31 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkButtonStyle.swift; sourceTree = "<group>"; };
+		323ECD2A2884246F003B3E31 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		323ECD3028842C46003B3E31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		324AEB4028840C590040320C /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AEB4328840C590040320C /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
-		324AEB4528840C590040320C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		324AEB4728840C5B0040320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324AEB4A28840C5B0040320C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44EDE3C357B85351D989D272 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +50,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323ECD1F2884136F003B3E31 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD272884218D003B3E31 /* Custom UI */,
+				323ECD202884137B003B3E31 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		323ECD202884137B003B3E31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD2128841396003B3E31 /* Binary+size.swift */,
+				323ECD23288414B4003B3E31 /* Color+custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		323ECD272884218D003B3E31 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		323ECD2C28842BCE003B3E31 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD2E28842BE7003B3E31 /* Model */,
+				323ECD2D28842BE3003B3E31 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		323ECD2D28842BE3003B3E31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD2528841565003B3E31 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		323ECD2E28842BE7003B3E31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD2A2884246F003B3E31 /* OnboardingState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		323ECD2F28842C21003B3E31 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD3228842C49003B3E31 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		323ECD3228842C49003B3E31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323ECD3028842C46003B3E31 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		324AEB3728840C590040320C = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				324AEB4328840C590040320C /* CryptoWalletApp.swift */,
-				324AEB4528840C590040320C /* ContentView.swift */,
+				323ECD2C28842BCE003B3E31 /* Onboarding */,
+				323ECD2F28842C21003B3E31 /* Main */,
+				323ECD1F2884136F003B3E31 /* Shared */,
 				324AEB4728840C5B0040320C /* Assets.xcassets */,
+				323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */,
+				323ECD1E288412F9003B3E31 /* Info.plist */,
 				324AEB4928840C5B0040320C /* Preview Content */,
 			);
 			path = CryptoWallet;
@@ -80,7 +164,6 @@
 				44EDE3C357B85351D989D272 /* Pods-CryptoWallet.debug.xcconfig */,
 				536CAC4B0B017670AD9C4258 /* Pods-CryptoWallet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323ECD3428842D2C003B3E31 /* Launch Screen.storyboard in Resources */,
 				324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */,
 				324AEB4828840C5B0040320C /* Assets.xcassets in Resources */,
 			);
@@ -206,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324AEB4628840C590040320C /* ContentView.swift in Sources */,
+				323ECD3128842C46003B3E31 /* MainView.swift in Sources */,
 				324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */,
+				323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */,
+				323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */,
+				323ECD2228841396003B3E31 /* Binary+size.swift in Sources */,
+				323ECD29288421A2003B3E31 /* PinkButtonStyle.swift in Sources */,
+				323ECD2B2884246F003B3E31 /* OnboardingState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -318,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,21 +429,25 @@
 				DEVELOPMENT_TEAM = 7RCT4GHCWV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.krbiz.CryptoWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krbiz.cryptowallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,21 +463,25 @@
 				DEVELOPMENT_TEAM = 7RCT4GHCWV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.krbiz.CryptoWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krbiz.cryptowallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
