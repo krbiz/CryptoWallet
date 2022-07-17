@@ -46,5 +46,7 @@ struct CryptoWalletApp: App {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().shadowImage = UIImage()
+        
+        UITextField.appearance().keyboardAppearance = UIKeyboardAppearance.dark
     }
 }

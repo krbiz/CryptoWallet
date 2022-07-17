@@ -10,7 +10,7 @@
 		323ECD2228841396003B3E31 /* Binary+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2128841396003B3E31 /* Binary+size.swift */; };
 		323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD23288414B4003B3E31 /* Color+custom.swift */; };
 		323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2528841565003B3E31 /* OnboardingView.swift */; };
-		323ECD29288421A2003B3E31 /* PinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */; };
+		323ECD29288421A2003B3E31 /* CapsuleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD28288421A2003B3E31 /* CapsuleButtonStyle.swift */; };
 		323ECD2B2884246F003B3E31 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD2A2884246F003B3E31 /* OnboardingState.swift */; };
 		323ECD3128842C46003B3E31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD3028842C46003B3E31 /* MainView.swift */; };
 		323ECD3428842D2C003B3E31 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */; };
@@ -24,6 +24,10 @@
 		323ECD4F2884547D003B3E31 /* CoinDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD4E2884547D003B3E31 /* CoinDetailsView.swift */; };
 		323ECD51288457B5003B3E31 /* UINavigationController+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */; };
 		323ECD53288468AF003B3E31 /* Double+currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD52288468AF003B3E31 /* Double+currency.swift */; };
+		323ECD5528847AAA003B3E31 /* View+placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD5428847AAA003B3E31 /* View+placeholder.swift */; };
+		323ECD5728847EAA003B3E31 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD5628847EAA003B3E31 /* CustomTextField.swift */; };
+		323ECD5928848127003B3E31 /* BorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD5828848127003B3E31 /* BorderButtonStyle.swift */; };
+		323ECD5B288487BA003B3E31 /* Text+gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323ECD5A288487BA003B3E31 /* Text+gradient.swift */; };
 		324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4328840C590040320C /* CryptoWalletApp.swift */; };
 		324AEB4828840C5B0040320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4728840C5B0040320C /* Assets.xcassets */; };
 		324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4A28840C5B0040320C /* Preview Assets.xcassets */; };
@@ -35,7 +39,7 @@
 		323ECD2128841396003B3E31 /* Binary+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binary+size.swift"; sourceTree = "<group>"; };
 		323ECD23288414B4003B3E31 /* Color+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+custom.swift"; sourceTree = "<group>"; };
 		323ECD2528841565003B3E31 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkButtonStyle.swift; sourceTree = "<group>"; };
+		323ECD28288421A2003B3E31 /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
 		323ECD2A2884246F003B3E31 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		323ECD3028842C46003B3E31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		323ECD3328842D2C003B3E31 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		323ECD4E2884547D003B3E31 /* CoinDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsView.swift; sourceTree = "<group>"; };
 		323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+backButton.swift"; sourceTree = "<group>"; };
 		323ECD52288468AF003B3E31 /* Double+currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+currency.swift"; sourceTree = "<group>"; };
+		323ECD5428847AAA003B3E31 /* View+placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+placeholder.swift"; sourceTree = "<group>"; };
+		323ECD5628847EAA003B3E31 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		323ECD5828848127003B3E31 /* BorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtonStyle.swift; sourceTree = "<group>"; };
+		323ECD5A288487BA003B3E31 /* Text+gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+gradient.swift"; sourceTree = "<group>"; };
 		324AEB4028840C590040320C /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AEB4328840C590040320C /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		324AEB4728840C5B0040320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 				323ECD45288441F9003B3E31 /* View+onLoad.swift */,
 				323ECD50288457B5003B3E31 /* UINavigationController+backButton.swift */,
 				323ECD52288468AF003B3E31 /* Double+currency.swift */,
+				323ECD5428847AAA003B3E31 /* View+placeholder.swift */,
+				323ECD5A288487BA003B3E31 /* Text+gradient.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -94,8 +104,10 @@
 		323ECD272884218D003B3E31 /* Custom UI */ = {
 			isa = PBXGroup;
 			children = (
-				323ECD28288421A2003B3E31 /* PinkButtonStyle.swift */,
+				323ECD28288421A2003B3E31 /* CapsuleButtonStyle.swift */,
 				323ECD4A2884515B003B3E31 /* SelectableButtonStyle.swift */,
+				323ECD5828848127003B3E31 /* BorderButtonStyle.swift */,
+				323ECD5628847EAA003B3E31 /* CustomTextField.swift */,
 			);
 			path = "Custom UI";
 			sourceTree = "<group>";
@@ -384,18 +396,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323ECD5528847AAA003B3E31 /* View+placeholder.swift in Sources */,
 				323ECD3128842C46003B3E31 /* MainView.swift in Sources */,
 				323ECD3C28843511003B3E31 /* ProfileView.swift in Sources */,
 				324AEB4428840C590040320C /* CryptoWalletApp.swift in Sources */,
 				323ECD3A28843507003B3E31 /* MarketView.swift in Sources */,
+				323ECD5728847EAA003B3E31 /* CustomTextField.swift in Sources */,
 				323ECD24288414B4003B3E31 /* Color+custom.swift in Sources */,
 				323ECD2628841565003B3E31 /* OnboardingView.swift in Sources */,
 				323ECD42288440BA003B3E31 /* MarketViewModel.swift in Sources */,
+				323ECD5B288487BA003B3E31 /* Text+gradient.swift in Sources */,
 				323ECD4F2884547D003B3E31 /* CoinDetailsView.swift in Sources */,
 				323ECD46288441F9003B3E31 /* View+onLoad.swift in Sources */,
 				323ECD2228841396003B3E31 /* Binary+size.swift in Sources */,
 				323ECD53288468AF003B3E31 /* Double+currency.swift in Sources */,
-				323ECD29288421A2003B3E31 /* PinkButtonStyle.swift in Sources */,
+				323ECD5928848127003B3E31 /* BorderButtonStyle.swift in Sources */,
+				323ECD29288421A2003B3E31 /* CapsuleButtonStyle.swift in Sources */,
 				323ECD442884411C003B3E31 /* Coin.swift in Sources */,
 				323ECD51288457B5003B3E31 /* UINavigationController+backButton.swift in Sources */,
 				323ECD4B2884515B003B3E31 /* SelectableButtonStyle.swift in Sources */,

@@ -30,11 +30,15 @@ struct Coin: Codable, Identifiable {
     
     struct MarketData: Codable {
         let currentPrice: CurrentPrice
+        let high24h: CurrentPrice
+        let low24h: CurrentPrice
         let priceChange24h: Double
         let priceChange24hPercentage: Double
         
         enum CodingKeys: String, CodingKey {
             case currentPrice = "current_price"
+            case high24h = "high_24h"
+            case low24h = "low_24h"
             case priceChange24h = "price_change_24h"
             case priceChange24hPercentage = "price_change_percentage_24h"
         }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Color {
-    
     enum Name: String {
         case white = "white"
         case black = "black"
@@ -23,5 +22,4 @@ extension Color {
     static func custom(_ type: Name) -> Color {
         return Color(type.rawValue)
     }
-    
 }

@@ -17,6 +17,8 @@ struct ProfileView: View {
             Color.custom(.black)
                 .ignoresSafeArea()
         )
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
     }
 }
 

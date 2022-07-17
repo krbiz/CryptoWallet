@@ -11,18 +11,20 @@ struct MainView: View {
     @State var selection = 1
     
     var body: some View {
-        TabView(selection: $selection) {
-            ProfileView()
-                .tabItem {
-                    Image(selection == 0 ? "tabbar-profile-fill" : "tabbar-profile")
-                }
-                .tag(0)
-            
-            MarketView()
-                .tabItem {
-                    Image(selection == 1 ? "tabbar-market-fill" : "tabbar-market")
-                }
-                .tag(1)
+        NavigationView {
+            TabView(selection: $selection) {
+                ProfileView()
+                    .tabItem {
+                        Image(selection == 0 ? "tabbar-profile-fill" : "tabbar-profile")
+                    }
+                    .tag(0)
+                
+                MarketView()
+                    .tabItem {
+                        Image(selection == 1 ? "tabbar-market-fill" : "tabbar-market")
+                    }
+                    .tag(1)
+            }
         }
     }
 }

@@ -14,59 +14,57 @@ struct MarketView: View {
     @State private var currentCoin: Coin?
     
     var body: some View {
-        NavigationView {
-            GeometryReader { reader in
-                if viewModel.isFetched {
-                    ZStack {
-                        ScrollView {
-                            LazyVStack(spacing: 0) {
-                                ForEach(viewModel.coins) { coin in
-                                    Button {
-                                        currentCoin = coin
-                                        showDetails = true
-                                    } label: {
-                                        MarketCoinView(coin: coin)
-                                    }
-                                    .buttonStyle(SelectableButtonStyle())
+        GeometryReader { reader in
+            if viewModel.isFetched {
+                ZStack {
+                    ScrollView {
+                        LazyVStack(spacing: 0) {
+                            ForEach(viewModel.coins) { coin in
+                                Button {
+                                    currentCoin = coin
+                                    showDetails = true
+                                } label: {
+                                    MarketCoinView(coin: coin)
                                 }
+                                .buttonStyle(SelectableButtonStyle())
                             }
                         }
-                        .introspectScrollView { scrollView in
-                            scrollView.indicatorStyle = .white
-                        }
-                        
-                        VStack {
-                            Color.custom(.black)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: reader.safeAreaInsets.top)
-                            
-                            Spacer()
-                        }
-                        .ignoresSafeArea()
                     }
-                    .overlay(
-                        NavigationLink(isActive: $showDetails, destination: {
-                            if let coin = currentCoin {
-                                CoinDetailsView(coin: coin)
-                            }
-                        }, label: {
-                            EmptyView()
-                        })
-                    )
-                } else {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Color.custom(.black)
+                    .introspectScrollView { scrollView in
+                        scrollView.indicatorStyle = .white
+                    }
+                    
+                    VStack {
+                        Color.custom(.black)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: reader.safeAreaInsets.top)
+                        
+                        Spacer()
+                    }
                     .ignoresSafeArea()
-            )
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
+                }
+                .overlay(
+                    NavigationLink(isActive: $showDetails, destination: {
+                        if let coin = currentCoin {
+                            CoinDetailsView(coin: coin)
+                        }
+                    }, label: {
+                        EmptyView()
+                    })
+                )
+            } else {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Color.custom(.black)
+                .ignoresSafeArea()
+        )
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
         .onLoad {
             viewModel.fetchData()
         }

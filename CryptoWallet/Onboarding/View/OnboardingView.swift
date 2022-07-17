@@ -41,7 +41,7 @@ struct OnboardingView: View {
                                 } label: {
                                     Text("Continue")
                                 }
-                                .buttonStyle(PinkButtonStyle())
+                                .buttonStyle(CapsuleButtonStyle())
                                 .padding(.top, 24)
                                 .padding(.bottom, 42)
                                 .padding(.horizontal, 20)

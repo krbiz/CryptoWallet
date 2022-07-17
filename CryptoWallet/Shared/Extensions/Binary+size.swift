@@ -8,7 +8,6 @@
 import UIKit
 
 extension BinaryFloatingPoint {
-    
     /// iPhone X
     var deviceScreenSize: CGSize {
         CGSize(width: 375, height: 812)
@@ -21,11 +20,9 @@ extension BinaryFloatingPoint {
     var sizeH: CGFloat {
         CGFloat(self) * UIScreen.main.bounds.height / deviceScreenSize.height
     }
-    
 }
 
 extension BinaryInteger {
-    
     var sizeW: CGFloat {
         CGFloat(self).sizeW
     }
@@ -33,5 +30,4 @@ extension BinaryInteger {
     var sizeH: CGFloat {
         CGFloat(self).sizeH
     }
-    
 }

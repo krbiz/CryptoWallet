@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SelectableButtonStyle: ButtonStyle {
-    
     func makeBody(configuration: Self.Configuration) -> some View {
         ZStack(alignment: .leading) {
             configuration.label
@@ -18,5 +17,4 @@ struct SelectableButtonStyle: ButtonStyle {
             }
         }
     }
-
 }

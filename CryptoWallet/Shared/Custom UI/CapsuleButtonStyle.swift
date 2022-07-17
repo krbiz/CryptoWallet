@@ -1,5 +1,5 @@
 //
-//  PinkButtonStyle.swift
+//  CapsuleButtonStyle.swift
 //  CryptoWallet
 //
 //  Created by Dmytro Krupskyi on 17.07.2022.
@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct PinkButtonStyle: ButtonStyle {
-    
+struct CapsuleButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
             Capsule()
@@ -21,8 +20,7 @@ struct PinkButtonStyle: ButtonStyle {
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.custom(.white))
         }
-        .opacity(configuration.isPressed ? 0.5 : 1)
+        .opacity(configuration.isPressed ? 0.25 : 1)
         .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
-    
 }
