@@ -11,6 +11,7 @@
 		324AEB4628840C590040320C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AEB4528840C590040320C /* ContentView.swift */; };
 		324AEB4828840C5B0040320C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4728840C5B0040320C /* Assets.xcassets */; };
 		324AEB4B28840C5B0040320C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AEB4A28840C5B0040320C /* Preview Assets.xcassets */; };
+		BF9A7C258972D7E38D28ED59 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD68307AB8277891EC88F103 /* Pods_CryptoWallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,9 @@
 		324AEB4528840C590040320C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		324AEB4728840C5B0040320C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324AEB4A28840C5B0040320C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44EDE3C357B85351D989D272 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		536CAC4B0B017670AD9C4258 /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		BD68307AB8277891EC88F103 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9A7C258972D7E38D28ED59 /* Pods_CryptoWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				324AEB4228840C590040320C /* CryptoWallet */,
 				324AEB4128840C590040320C /* Products */,
+				E8C06A00A99C824CD2428FC3 /* Pods */,
+				EA692E0066F5FEDC521B58F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E8C06A00A99C824CD2428FC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44EDE3C357B85351D989D272 /* Pods-CryptoWallet.debug.xcconfig */,
+				536CAC4B0B017670AD9C4258 /* Pods-CryptoWallet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA692E0066F5FEDC521B58F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD68307AB8277891EC88F103 /* Pods_CryptoWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324AEB4E28840C5B0040320C /* Build configuration list for PBXNativeTarget "CryptoWallet" */;
 			buildPhases = (
+				FE204100314945FCADAF47AA /* [CP] Check Pods Manifest.lock */,
 				324AEB3C28840C590040320C /* Sources */,
 				324AEB3D28840C590040320C /* Frameworks */,
 				324AEB3E28840C590040320C /* Resources */,
+				DFC063FEA8DB2340782D55AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFC063FEA8DB2340782D55AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE204100314945FCADAF47AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		324AEB3C28840C590040320C /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		324AEB4F28840C5B0040320C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44EDE3C357B85351D989D272 /* Pods-CryptoWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +360,7 @@
 		};
 		324AEB5028840C5B0040320C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536CAC4B0B017670AD9C4258 /* Pods-CryptoWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
