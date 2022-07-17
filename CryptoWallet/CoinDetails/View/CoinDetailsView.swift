@@ -13,7 +13,7 @@ struct CoinDetailsView: View {
     
     var body: some View {
         GeometryReader { reader in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     VStack(spacing: 0) {
                         Text(coin.marketData.currentPrice.usd.currencyFormat)
@@ -72,6 +72,8 @@ struct CoinDetailsView: View {
                             .padding(.top, 30)
                             .cornerRadius(30)
                             .padding(.top, -30)
+                            .frame(height: 600)
+                            .offset(y: -200)
                     )
                     
                     VStack(spacing: 32) {
@@ -126,7 +128,7 @@ struct CoinDetailsView: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 21)
                     
-                    VStack(alignment: .leading, spacing: 18) {
+                    VStack(alignment: .leading, spacing: 16) {
                         Text("💸 About \(coin.symbol.uppercased())")
                             .font(.system(size: 20, weight: .semibold))
                             .foregroundColor(.custom(.white))

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var selection = 1
+    @State var selection = 0
     
     var body: some View {
         NavigationView {
