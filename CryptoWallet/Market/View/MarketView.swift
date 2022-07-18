@@ -33,16 +33,16 @@ struct MarketView: View {
                     .introspectScrollView { scrollView in
                         scrollView.indicatorStyle = .white
                     }
-                    
-                    VStack {
+                }
+                .overlay(
+                    VStack(spacing: 0) {
                         Color.custom(.black)
                             .frame(maxWidth: .infinity)
                             .frame(height: reader.safeAreaInsets.top)
-                        
-                        Spacer()
                     }
-                    .ignoresSafeArea()
-                }
+                    .frame(maxHeight: .infinity, alignment: .top)
+                    .ignoresSafeArea(edges: .top)
+                )
                 .overlay(
                     NavigationLink(isActive: $showDetails, destination: {
                         if let coin = currentCoin {

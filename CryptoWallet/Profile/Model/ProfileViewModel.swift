@@ -16,10 +16,12 @@ class ProfileViewModel: ObservableObject {
     
     func fetchData() {
         news = News.generateFakeData()
+        let chartData = ChartData.generateFakeData()
         
         AF.request("https://api.coingecko.com/api/v3/coins").responseDecodable(of: [Coin].self) { response in
-            guard let coins = response.value else { return }
-            self.coins = coins
+            guard var coins = response.value?.prefix(5) else { return }
+            coins.indices.forEach { coins[$0].chartData = chartData[$0] }
+            self.coins = Array(coins)
             self.isFetchedTrending = true
         }
     }

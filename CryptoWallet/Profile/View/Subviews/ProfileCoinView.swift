@@ -32,7 +32,10 @@ struct ProfileCoinView: View {
                 }
             }
             
-            Spacer()
+            if let chartData = coin.chartData {
+                LightChartView(data: chartData.data, type: .curved, visualType: .outline(color: chartData.color, lineWidth: 2))
+                    .padding(.vertical, 10)
+            }
             
             HStack {
                 Text(coin.marketData.currentPrice.usd.currencyFormat)

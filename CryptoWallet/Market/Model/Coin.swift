@@ -14,6 +14,8 @@ struct Coin: Codable, Identifiable {
     let image: ImageAsset
     let marketData: MarketData
     
+    var chartData: ChartData?
+    
     enum CodingKeys: String, CodingKey {
         case id
         case symbol

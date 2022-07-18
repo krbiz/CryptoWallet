@@ -12,78 +12,89 @@ struct ProfileView: View {
     @StateObject private var viewModel = ProfileViewModel()
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 0) {
-                HStack {
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text("Welcome back, ")
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.custom(.gray))
+        GeometryReader { reader in
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("Welcome back, ")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(.custom(.gray))
+                            
+                            Text("Matthew 👋🏻")
+                                .font(.system(size: 24, weight: .semibold))
+                                .foregroundColor(.custom(.white))
+                        }
                         
-                        Text("Matthew 👋🏻")
-                            .font(.system(size: 24, weight: .semibold))
+                        Spacer()
+                        
+                        KFImage(URL(string: "https://thispersondoesnotexist.com/image"))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 60, height: 60)
+                            .clipShape(Circle())
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 21)
+                    
+                    ZStack {
+                        LinearGradient(gradient: Gradient(colors: [.custom(.lightPink), .custom(.darkPink)]), startPoint: .leading, endPoint: .trailing)
+                            .frame(width: 90, height: 90)
+                            .clipShape(Circle())
+                            .frame(width: 180, height: 180)
+                            .clipShape(Circle())
+                            .blur(radius: 22.5)
+                            .opacity(0.8)
+                            .background(Color.custom(.darkBlue).opacity(0.5))
+                            .clipShape(Circle())
+                        
+                        Text("$246.00")
+                            .font(.system(size: 20, weight: .semibold))
                             .foregroundColor(.custom(.white))
                     }
+                    .padding(.top, 32)
                     
-                    Spacer()
-                    
-                    KFImage(URL(string: "https://thispersondoesnotexist.com/image"))
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 60, height: 60)
-                        .clipShape(Circle())
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, 21)
-                
-                ZStack {
-                    LinearGradient(gradient: Gradient(colors: [.custom(.lightPink), .custom(.darkPink)]), startPoint: .leading, endPoint: .trailing)
-                        .frame(width: 90, height: 90)
-                        .clipShape(Circle())
-                        .frame(width: 180, height: 180)
-                        .clipShape(Circle())
-                        .blur(radius: 22.5)
-                        .opacity(0.8)
-                        .background(Color.custom(.darkBlue).opacity(0.5))
-                        .clipShape(Circle())
-                    
-                    Text("$246.00")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundColor(.custom(.white))
-                }
-                .padding(.top, 32)
-                
-                HStack(spacing: 10) {
-                    Button {
+                    HStack(spacing: 10) {
+                        Button {
+                            
+                        } label: {
+                            Text("Deposit")
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 5)
+                        }
+                        .buttonStyle(BorderButtonStyle())
+                        .frame(maxWidth: .infinity)
                         
-                    } label: {
-                        Text("Deposit")
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 5)
+                        Button {
+                            
+                        } label: {
+                            Text("Withdraw")
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 5)
+                        }
+                        .buttonStyle(BorderButtonStyle())
+                        .frame(maxWidth: .infinity)
                     }
-                    .buttonStyle(BorderButtonStyle())
-                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 32)
                     
-                    Button {
-                        
-                    } label: {
-                        Text("Withdraw")
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 5)
-                    }
-                    .buttonStyle(BorderButtonStyle())
-                    .frame(maxWidth: .infinity)
+                    TrendingView()
+                        .padding(.top, 42)
+                    
+                    NewsView()
+                        .padding(.top, 42)
+                        .padding(.bottom, 14)
                 }
-                .padding(.horizontal, 20)
-                .padding(.top, 32)
-                
-                TrendingView()
-                    .padding(.top, 42)
-                
-                NewsView()
-                    .padding(.top, 42)
-                    .padding(.bottom, 14)
             }
+            .overlay(
+                VStack(spacing: 0) {
+                    Color.custom(.black)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: reader.safeAreaInsets.top)
+                }
+                .frame(maxHeight: .infinity, alignment: .top)
+                .ignoresSafeArea(edges: .top)
+            )
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
@@ -108,7 +119,7 @@ struct ProfileView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 16) {
-                    ForEach(viewModel.coins.prefix(5)) { coin in
+                    ForEach(viewModel.coins) { coin in
                         Button {
                             
                         } label: {
@@ -154,7 +165,6 @@ struct ProfileView: View {
             }
         }
     }
-    
     
 }
 

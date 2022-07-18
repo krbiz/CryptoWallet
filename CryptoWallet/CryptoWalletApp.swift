@@ -26,14 +26,13 @@ struct CryptoWalletApp: App {
     }
     
     private func setGlobalAppearance() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "darkBlue")
+        UITabBar.appearance().standardAppearance = appearance
+        
         if #available(iOS 15.0, *) {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = UIColor(named: "darkBlue")
-            UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
-        } else {
-            UITabBar.appearance().backgroundColor = UIColor(named: "darkBlue")
         }
         
         let image = UIImage(named: "navbar-back")?
